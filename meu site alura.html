@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Famosas que eu gosto</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      font-size: 100%;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f3a6a1;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    /* Acessibilidade */
+    .menu-acessibilidade {
+      position: fixed;
+      top: 2rem;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .rotacao-botao {
+      transform: rotate(-90deg);
+      transform-origin: right center;
+    }
+
+    .opcoes-acessibilidade {
+      margin-top: 10px;
+      display: none;
+      flex-direction: column;
+    }
+
+    .opcoes-acessibilidade button {
+      margin-bottom: 5px;
+    }
+
+    .apresenta-lista {
+      display: flex !important;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .fw-bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu de acessibilidade -->
+  <div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+      <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+      <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Famosas que eu gosto</h1>
+    <nav>
+      <ul>
+        <li><a href="#olivia">Olivia Rodrigo</a></li>
+        <li><a href="#blackpink">Blackpink - Rosé</a></li>
+        <li><a href="#sadie">Sadie Sink</a></li>
+        <li><a href="#dove">Dove Cameron</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="olivia">
+      <h2>Olivia Rodrigo</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Olivia_Rodrigo_2021.jpg" alt="Olivia Rodrigo">
+      <p>Olivia Rodrigo é uma cantora e atriz americana conhecida pelo álbum "SOUR" e pela música "drivers license". Também participou da série "High School Musical: The Musical: The Series".</p>
+    </section>
+
+    <section id="blackpink">
+      <h2>Blackpink - Rosé</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/190928_%EB%A1%9C%EC%A0%9C.jpg" alt="Rosé - Blackpink">
+      <p>Rosé é uma das integrantes do grupo de K-pop Blackpink. Destaca-se por sua voz marcante e lançou músicas solo como "On The Ground".</p>
+    </section>
+
+    <section id="sadie">
+      <h2>Sadie Sink</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sadie_Sink_by_Gage_Skidmore.jpg" alt="Sadie Sink">
+      <p>Sadie Sink é uma atriz conhecida por interpretar Max em "Stranger Things". Também atuou em filmes como "The Whale" e "Fear Street".</p>
+    </section>
+
+    <section id="dove">
+      <h2>Dove Cameron</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Dove_Cameron_2019.jpg" alt="Dove Cameron">
+      <p>Dove Cameron é atriz e cantora famosa por "Liv e Maddie" e "Descendentes". Também tem uma carreira musical com hits como "Boyfriend".</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Famosas que eu gosto. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
